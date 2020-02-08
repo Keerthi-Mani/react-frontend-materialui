@@ -1,20 +1,27 @@
 import React, { Component, Fragment } from "react";
+// import Dialog from "@material-ui/core/Dialog";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import AppBar from "material-ui/AppBar";
 import TextField from "material-ui/TextField";
 import Button from "material-ui/RaisedButton";
 
 class FormUserDetails extends Component {
+  sumbit = e => {
+    e.preventDefault();
+    this.props.nextStep();
+  };
+
   render() {
     const { values, handleChange } = this.props;
 
     return (
       <MuiThemeProvider>
         <Fragment>
+          {/* <Dialog open="true" fullwidth="true" maxWidth="md"> */}
           <AppBar title="Enter User Details" />
           <TextField
-            placeholder="Enter Your First Name"
-            label="First Name"
+            hintText="Enter Your First Name"
+            floatingLabelText="First Name"
             onChange={handleChange("firstName")}
             defaultValue={values.firstName}
             margin="normal"
@@ -22,8 +29,8 @@ class FormUserDetails extends Component {
           />
           <br />
           <TextField
-            placeholder="Enter Your Last Name"
-            label="Last Name"
+            hintText="Enter Your Last Name"
+            floatingLabelText="Last Name"
             onChange={handleChange("lastName")}
             defaultValue={values.lastName}
             margin="normal"
@@ -31,8 +38,8 @@ class FormUserDetails extends Component {
           />
           <br />
           <TextField
-            placeholder="Enter Your Email"
-            label="Email"
+            hintText="Enter Your Email"
+            floatingLabelText="Email"
             onChange={handleChange("email")}
             defaultValue={values.email}
             margin="normal"
@@ -42,6 +49,7 @@ class FormUserDetails extends Component {
           <Button color="primary" variant="contained" onClick={this.submit}>
             Continue
           </Button>
+          {/* </Dialog> */}
         </Fragment>
       </MuiThemeProvider>
     );
