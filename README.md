@@ -1,3 +1,5 @@
+# React-FrontEnd-MaterialUI
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +68,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Overview
+
+In this project we will build a React multi step form with multiple componenets including user & personal details, confirmation and success.
+
+<img width="1080" alt="Screen Shot 2020-02-08 at 3 50 52 PM" src="https://user-images.githubusercontent.com/52920074/74091873-da803900-4a8a-11ea-85b6-9fb31e5b0bcc.png">
+<img width="1082" alt="Screen Shot 2020-02-08 at 3 50 34 PM" src="https://user-images.githubusercontent.com/52920074/74091877-dbb16600-4a8a-11ea-8fc8-fbf6fa83225c.png">
+<img width="1090" alt="Screen Shot 2020-02-08 at 3 50 23 PM" src="https://user-images.githubusercontent.com/52920074/74091878-dbb16600-4a8a-11ea-97c7-81d4aafc7133.png">
+<img width="1092" alt="Screen Shot 2020-02-08 at 3 50 06 PM" src="https://user-images.githubusercontent.com/52920074/74091880-dc49fc80-4a8a-11ea-8505-97f7d62a3172.png">
