@@ -46,13 +46,25 @@ class FormPersonalDetails extends Component {
           <RaisedButton
             label="Previous"
             primary={true}
+            style={styles.button}
             onClick={this.previous}
           />
-          <RaisedButton label="Continue" primary={true} onClick={this.submit} />
+          <RaisedButton
+            label="Continue"
+            primary={true}
+            onClick={this.submit}
+            style={styles.button}
+          />
         </Fragment>
       </MuiThemeProvider>
     );
   }
 }
+
+const styles = {
+  button: {
+    margin: 15
+  }
+};
 
 export default FormPersonalDetails;

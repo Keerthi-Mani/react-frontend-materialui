@@ -42,7 +42,7 @@ class FormUserDetails extends Component {
             label="Continue"
             primary={true}
             onClick={this.submit}
-            style={style.button}
+            style={styles.button}
           />
         </Fragment>
       </MuiThemeProvider>
