@@ -3,7 +3,7 @@ import React, { Component, Fragment } from "react";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import AppBar from "material-ui/AppBar";
 import TextField from "material-ui/TextField";
-import Button from "material-ui/RaisedButton";
+import RaisedButton from "material-ui/RaisedButton";
 
 class FormUserDetails extends Component {
   sumbit = e => {
@@ -46,9 +46,7 @@ class FormUserDetails extends Component {
             fullWidth="true"
           />
           <br />
-          <Button color="primary" variant="contained" onClick={this.submit}>
-            Continue
-          </Button>
+          <RaisedButton label="Continue" primary={true} onClick={this.submit} />
           {/* </Dialog> */}
         </Fragment>
       </MuiThemeProvider>
