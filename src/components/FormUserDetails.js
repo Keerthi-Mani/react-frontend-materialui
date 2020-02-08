@@ -5,7 +5,7 @@ import TextField from "material-ui/TextField";
 import RaisedButton from "material-ui/RaisedButton";
 
 class FormUserDetails extends Component {
-  sumbit = e => {
+  continue = e => {
     e.preventDefault();
     this.props.nextStep();
   };
@@ -41,7 +41,7 @@ class FormUserDetails extends Component {
           <RaisedButton
             label="Continue"
             primary={true}
-            onClick={this.submit}
+            onClick={this.continue}
             style={styles.button}
           />
         </Fragment>

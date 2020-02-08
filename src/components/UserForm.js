@@ -52,7 +52,6 @@ class UserForm extends Component {
             values={values}
           />
         );
-
       case 2:
         return (
           <FormPersonalDetails
@@ -62,7 +61,6 @@ class UserForm extends Component {
             values={values}
           />
         );
-
       case 3:
         return (
           <Confirm
@@ -71,7 +69,6 @@ class UserForm extends Component {
             values={values}
           />
         );
-
       case 4:
         return <Success />;
     }

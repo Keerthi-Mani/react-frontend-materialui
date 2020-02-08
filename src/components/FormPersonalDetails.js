@@ -5,12 +5,12 @@ import TextField from "material-ui/TextField";
 import RaisedButton from "material-ui/RaisedButton";
 
 class FormPersonalDetails extends Component {
-  sumbit = e => {
+  continue = e => {
     e.preventDefault();
     this.props.nextStep();
   };
 
-  previous = e => {
+  back = e => {
     e.preventDefault();
     this.props.prevStep();
   };
@@ -44,15 +44,15 @@ class FormPersonalDetails extends Component {
           />
           <br />
           <RaisedButton
-            label="Previous"
+            label="Back"
             primary={false}
             style={styles.button}
-            onClick={this.previous}
+            onClick={this.back}
           />
           <RaisedButton
             label="Continue"
             primary={true}
-            onClick={this.submit}
+            onClick={this.continue}
             style={styles.button}
           />
         </Fragment>
