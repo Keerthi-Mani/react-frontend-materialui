@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import AppBar from "material-ui/AppBar";
 import TextField from "material-ui/TextField";
-import RaisedButton from "material-ui/RaisedButton";
+import Button from "material-ui/RaisedButton";
 
 class FormUserDetails extends Component {
   render() {
@@ -12,7 +12,6 @@ class FormUserDetails extends Component {
       <MuiThemeProvider>
         <Fragment>
           <AppBar title="Enter User Details" />
-
           <TextField
             placeholder="Enter Your First Name"
             label="First Name"
@@ -39,6 +38,10 @@ class FormUserDetails extends Component {
             margin="normal"
             fullWidth="true"
           />
+          <br />
+          <Button color="primary" variant="contained" onClick={this.submit}>
+            Continue
+          </Button>
         </Fragment>
       </MuiThemeProvider>
     );
