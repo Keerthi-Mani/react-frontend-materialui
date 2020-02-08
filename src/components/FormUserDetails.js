@@ -38,11 +38,21 @@ class FormUserDetails extends Component {
             defaultValue={values.email}
           />
           <br />
-          <RaisedButton label="Continue" primary={true} onClick={this.submit} />
+          <RaisedButton
+            label="Continue"
+            primary={true}
+            onClick={this.submit}
+            style={style.button}
+          />
         </Fragment>
       </MuiThemeProvider>
     );
   }
 }
 
+const styles = {
+  button: {
+    margin: 15
+  }
+};
 export default FormUserDetails;
