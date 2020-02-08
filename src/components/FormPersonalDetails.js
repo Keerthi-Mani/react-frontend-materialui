@@ -5,6 +5,16 @@ import TextField from "material-ui/TextField";
 import RaisedButton from "material-ui/RaisedButton";
 
 class FormPersonalDetails extends Component {
+  sumbit = e => {
+    e.preventDefault();
+    this.props.nextStep();
+  };
+
+  previous = e => {
+    e.preventDefault();
+    this.props.prevStep();
+  };
+
   render() {
     const { values, handleChange } = this.props;
 
@@ -33,6 +43,11 @@ class FormPersonalDetails extends Component {
             defaultValue={values.bio}
           />
           <br />
+          <RaisedButton
+            label="Previous"
+            primary={true}
+            onClick={this.previous}
+          />
           <RaisedButton label="Continue" primary={true} onClick={this.submit} />
         </Fragment>
       </MuiThemeProvider>
