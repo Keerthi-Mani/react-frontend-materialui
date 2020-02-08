@@ -28,6 +28,11 @@ class UserForm extends Component {
   };
 
   //Handle field change
+  handleChange = input => e => {
+    this.setState({
+      [input]: e.target.value
+    });
+  };
 
   render() {
     return <div>Hello</div>;
