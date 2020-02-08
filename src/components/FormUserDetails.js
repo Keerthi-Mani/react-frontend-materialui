@@ -32,10 +32,10 @@ class FormUserDetails extends Component {
           />
           <br />
           <TextField
-            placeholder="Enter Your First Name"
-            label="First Name"
-            onChange={handleChange("firstName")}
-            defaultValue={values.firstName}
+            placeholder="Enter Your Email"
+            label="Email"
+            onChange={handleChange("email")}
+            defaultValue={values.email}
             margin="normal"
             fullWidth="true"
           />
