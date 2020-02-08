@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-// import Dialog from "@material-ui/core/Dialog";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import AppBar from "material-ui/AppBar";
 import TextField from "material-ui/TextField";
@@ -17,15 +16,12 @@ class FormUserDetails extends Component {
     return (
       <MuiThemeProvider>
         <Fragment>
-          {/* <Dialog open="true" fullwidth="true" maxWidth="md"> */}
           <AppBar title="Enter User Details" />
           <TextField
             hintText="Enter Your First Name"
             floatingLabelText="First Name"
             onChange={handleChange("firstName")}
             defaultValue={values.firstName}
-            margin="normal"
-            fullWidth="true"
           />
           <br />
           <TextField
@@ -33,8 +29,6 @@ class FormUserDetails extends Component {
             floatingLabelText="Last Name"
             onChange={handleChange("lastName")}
             defaultValue={values.lastName}
-            margin="normal"
-            fullWidth="true"
           />
           <br />
           <TextField
@@ -42,12 +36,9 @@ class FormUserDetails extends Component {
             floatingLabelText="Email"
             onChange={handleChange("email")}
             defaultValue={values.email}
-            margin="normal"
-            fullWidth="true"
           />
           <br />
           <RaisedButton label="Continue" primary={true} onClick={this.submit} />
-          {/* </Dialog> */}
         </Fragment>
       </MuiThemeProvider>
     );
